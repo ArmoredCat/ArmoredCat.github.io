@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+
+<html lang="de">
+  
+  <head>
+ 
+  	<meta charset="UTF-8"> 
+	<title>SIAS-Salzburg Institute of Actuarial Studies</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <style>
+
+      html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+      .mySlides {display:none}
+      .w3-tag, .fa {cursor:pointer}
+      .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+      a:link {color:blue;text-decoration:underline}
+      a:visited {color:purple}
+      a:hover {text-decoration:underline}
+      a.topbar:link {color:black;text-decoration:none}
+      a.topbar:visited {color:black;}
+      a.topbar:hover {color:black;text-decoration:none}
+  
+    </style>
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="Favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="Favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="Favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="Favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="Favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="Favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+	<link rel="manifest" href="Favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="Favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+  </head>
+  
+  <body>
+
+    <!-- Obere Leiste -->
+
+    <div class="w3-top">
+      <div class="w3-bar w3-large w3-light-grey w3-center" style="padding-top:10px;padding-bottom:10px;">
+        <a href="#" style="width:16.66%" class="topbar w3-button w3-block w3-bar-item">Startseite</a>       
+        <div class="w3-dropdown-hover" style="width:16.66%">
+          <button class="w3-button w3-block"  style="width:100%">Programm</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4" style="width:16.66%;">
+            <a href="#AktuelleKurse" class="topbar w3-bar-item w3-button">Aktuelle Kurse</a>
+            <a href="#Programmvorschau" class="topbar w3-bar-item w3-button">Programmvorschau</a>
+            <a href="#BisherigeKurse" class="topbar w3-bar-item w3-button">Bisherige Kurse</a>
+          </div>
+        </div>
+        <a href="#Anforderungen" style="width:16.66%" class="topbar w3-button w3-block w3-bar-item">Anforderungen</a>
+        <a href="#DAV" style="width:16.66%" class="topbar w3-button w3-block w3-bar-item">DAV</a>
+        <a href="#Vortragende" style="width:16.66%" class="topbar w3-button w3-block w3-bar-item">Vortragende</a>
+        <a href="#Kontakt" style="width:16.66%" class="topbar w3-button w3-block w3-bar-item">Kontakt</a>      
+      </div>
+    </div>
+  
+    <!-- Ende obere Leiste -->
+
+    <!-- Titel -->
+
+    <div class="w3-content" style="max-width:100%;margin-top:40px;margin-bottom:60px;	height:100%;">
+      <div class="w3-container" style="background-color:#85A8BC;">
+        <table>
+          <tr>
+            <th style="padding-left: 100px;padding-bottom:10px;padding-top:30px;position:relative;font-size: 115px; font-family: arial, sans-serif;color: #000000;font-weight:normal;padding-right:20px">SIAS</th>
+            <td style="padding-left: 20px;padding-top:20px;position:relative;font-size: 40px; font-family: arial, sans-serif;color: #000000">Salzburg Institute<br>of Actuarial Studies</td>
+			<td style="padding-top: 50px;position:absolute;right:50px"><a href="StartseiteEN"> <img src="Flaggen/English.png" alt="English" width="50" height="30"></a> <a href="/"><img src="Flaggen/Deutsch.png" alt="Deutsch" width="50" height="30"></a></td>	
+          </tr>
+        </table> 
+      </div>
+
+    </div>
+
+
+    <!-- Ende Titel -->
+
+
+    <!-- Grundgerüst -->
+
+    <div class="w3-content" style="max-width:1000px;margin-bottom:80px;">
+
+
+      <!-- Willkommensspruch -->
+
+      <div class="w3-container" style="margin-bottom:40px;margin-top:50px;font-size: 30px; font-family: arial, sans-serif;color: #000000; text-align: center">
+
+        Willkommen bei SIAS - Salzburg Institute of Actuarial Studies!
+
+      </div>
+
+
+      <!-- Ende Willkommensspruch -->
+
+      <!-- "Was ist ein Aktuar?" -->
+
+      <div class="w3-container" style="margin-top: 40px; margin-bottom:40px;">
+
+        <h3>Was ist ein Aktuar?</h3>
+        <p>
+        Aktuare sind versicherungs- und finanzmathematische Sachverständige, die überwiegend im Versicherungs-,
+        Pensions- und Finanzwesen tätig sind. Sie sind Experten in der Anwendung mathematisch-statistischer Methoden unter
+        Berücksichtigung der rechtlichen und ökonomischen Rahmenbedingungen. Sie beschäftigen sich unter anderem mit der
+        Gestaltung und Kalkulation von Produkten, der Bewertung zukünftiger Leistungsverpflichtungen sowie der finanziellen
+        Risikoeinschätzung und -steuerung. Ihre fachlich unabhängige Expertise setzen sie dabei in Unternehmen,
+        öffentlichen Einrichtungen oder als Selbstständige zum Nutzen der Kunden, der Unternehmen
+        sowie von Aufsichtszwecken ein.
+        </p>
+
+        <p>
+        Im Rahmen des Schwerpunkts „Finanz- und Versicherungsmathematik“ können Sie jene aktuariellen, wirtschaftlichen und
+        rechtlichen Kenntnisse erwerben, die nach den Richtlinien der Aktuarvereinigung Österreichs Voraussetzung für die
+        Anerkennung als Aktuar sind. Damit werden auch die Anforderungen der österreichischen Finanzmarktaufsicht für die
+        Bestellung zum verantwortlichen Aktuar erfüllt.
+        </p>
+
+      </div>
+
+      <!-- Ende "Was ist ein Aktuar?" -->
+
+      <hr>
+
+      <!-- Programmvorschau -->
+	  
+	  <!-- Aktuelle Kurse -->
+      
+      <div class="w3-row-padding" id="AktuelleKurse">
+        <div class="w3-center" style="padding-top: 70px; padding-bottom:30px;">
+          <h1>Aktuelle Kurse</h1>
+        </div>
+	    <table class="w3-table w3-bordered">
+          <tr>
+            <td><ul><li><b>Pensionsversicherungsmathematik:</b></li></ul>
+              <ul><li><b>Fortgeschrittene statistische Methoden im Versicherungswesen:</b></li></ul>
+              <ul><li><b>Sozialversicherungsrecht:</b></li></ul>
+            </td>
+            <td>Anmeldung
+              <p>Anmeldung</p>
+              <p>Anmeldung</p>
+            </td>
+            <td><a href="AktuelleKurse/PensionsversicherungsmathematikEinladung.pdf" target="_blank">Einladung</a>
+              <p><a href="AktuelleKurse/FsMiVEinladung.pdf" target="_blank">Einladung</a></p>
+              <p><a href="AktuelleKurse/SozialversicherungsrechtEinladung.pdf" target="_blank">Einladung</a></p>
+			  
+			  <br>	
+			  
+            </td>
+          </tr>
+        </table>
+		
+      </div>
+	  
+	  <!-- Ende aktuelle Kurse -->
+	  
+	  <!-- Programm -->
+      
+      <div class="w3-row-padding" id="Programmvorschau">
+        <div class="w3-center" style="padding-top: 70px; padding-bottom:30px;">
+          <h1>Programmvorschau bis 2020</h1>
+          <p>(Stand August 2017, Änderungen vorbehalten)</p>
+        </div>
+
+        <table class="w3-table w3-striped w3-bordered">
+          <tr>
+            <td><b>WS 2017/18</b></td>
+            <td>Pensionsversicherungsmathematik
+              <p>Fortgeschrittene statistische Methoden im Versicherungswesen</p>
+              <p>Sozialversicherungsrecht</p>
+            </td>
+            <td>3 Wochenenden
+              <p>3&frac12;- Tage Block</p>
+              <p>3 Wochenenden</p>
+            </td>
+            <td>Anmeldung
+              <p>Anmeldung</p>
+              <p>Anmeldung</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>SS 2018</b></td>
+            <td>Finanzmathematik mit Übung
+              <p>Internationale Rechnungslegung von Versicherungsunternehmen</p>
+            </td>
+            <td>6 Wochenenden
+              <p>3&frac12;- Tage Block</p>
+            </td>
+            <td>
+              <p></p>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>WS 2018/19</b></td>
+            <td>Krankenversicherungsmathematik
+              <p>Aktuarielle Modellierung</p>
+              <p>Versicherungsökonomie</p>
+            </td>
+            <td>3 Wochenenden
+              <p>3&frac12;- Tage Block</p>
+              <p>3 Wochenenden</p>
+            </td>
+            <td>
+              <p></p>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>SS 2019</b></td>
+            <td>Schadenversicherungsmathematik
+              <p>Instrumente und Strategien der Kapitalveranlagung</p>
+              <p>Versicherungsvertragsrecht</p>
+            </td>
+            <td>3 Wochenenden
+              <p>3&frac12;- Tage Block</p>
+              <p>3 Wochenenden</p>
+            </td>
+            <td>
+              <p></p>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>WS 2019/20</b></td>
+            <td>Grundlegende statistische Methoden im Versicherungswesen
+              <p>Rechnungslegung im Versicherungswesen</p>
+              <p>Versicherungsaufsichtsrecht</p>
+            </td>
+            <td>3&frac12;- Tage Block
+              <p>3 Wochenenden</p>
+              <p>3 Wochenenden</p>
+            </td>
+            <td>
+              <p></p>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>SS 2020</b></td>
+            <td>Lebensversicherungsmathematik mit Übung
+              <p>Risikomanagement im Versicherungswesen</p>
+            </td>
+            <td>6 Wochenenden
+              <p>3&frac12;- Tage Block</p>
+            </td>
+            <td>
+              <p></p>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+      <br>
+      <br>
+	  
+      <div class="w3-container">
+        <p> <b>Downloads: </b> 	<a href="ProgrammDE.pdf" target="_blank">Programmvorschau bis 2020</a>
+        </p>
+      </div>
+      
+	  <!-- Ende Programm -->
+	  
+	  <!-- Bisherige Kurse -->
+	  
+      <div class="w3-row-padding" id="BisherigeKurse">
+        <div class="w3-center" style="padding-top: 70px; padding-bottom:30px;">
+          <h1>Bisherige Kurse</h1>
+        </div>
+		<p>
+        Informationen und Einladungen zu den bisherigen Kursen finden Sie <a href="BisherigeKurseDE.html" target="_blank">hier</a>.
+        </p>
+      </div>
+	  
+	  <!-- Ende Bisherige Kurse -->
+	  
+      <!-- Ende Programmvorschau -->
+      
+      <br>
+	  
+      <hr>
+
+      <!-- Anforderungen -->
+
+      <div class="w3-row-padding" id="Anforderungen">
+
+        <div class="w3-center" style="padding-top: 70px; padding-bottom:30px;">
+
+          <h1>Anforderungen der AVOE</h1>
+
+        </div>
+        
+        <div class="w3-container">
+
+          <h3>Die drei Grundvorsaussetzungen</h3>
+            Die Anerkennung als Aktuar durch Aufnahme in die Sektion Anerkannter Aktuare erfordert:
+              <ol type="a">
+                <li>den positiven Abschluß eines Mathematikstudiums an einer Universität,</li>
+                <li>den Nachweis einer versicherungsmathematischen, versicherungswirtschaftlichen und versicherungsrechtlichen Ausbildung sowie</li>
+                <li>den Nachweis einer einschlägigen Praxis</li>
+              </ol>
+            Für weitere Informationen sehen Sie Folgendes:
+
+          <table class="w3-table">
+            <tr>
+              <td>
+                <ul>
+                  <li><a href="AVOE/VoraussetzungAnerkennung.pdf" target="_blank">Voraussetzungen für die Anerkennung als Aktuar</a>
+                    <p>(Änderung und Ergänzung der Richtlinien für die Aufnahme in die Sektion Anerkannter Aktuare
+                    vom 8. September 1999 gemäß Beschluss der Generalversammlung vom 4. Juni 2009.)
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li><a href="AVOE/Weiterbildung.pdf" target="_blank">Obligatorische Weiterbildung für Anerkannte Aktuare – CPD</a>
+                    <p>(Beschluss der Generalversammlung vom 4. Juni 2009.)</p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li><a href="AVOE/Professionalismus.pdf" target="_blank">Berufsständisches Seminar - Professionalism</a>
+                    <p>(Beschluss der Generalversammlung vom 10. Juni 2012 betreffend die Änderung und Ergänzung der Richtlinien für die
+                    Aufnahme in die Sektion Anerkannter Aktuare vom 8. Septemer 1999, zuletzt geändert durch Beschluss der Generalversammlung
+                    vom 4. Juni 2009.)
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li><a href="AVOE/Aktuarausbildung.pdf" target="_blank">Unterlagen zur Aktuarausbildung in Salzburg</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+       
+      <!-- Ende Anforderungen -->
+
+      <hr>
+      
+      <!-- DAV -->
+      
+      <div class="w3-row-padding" id="DAV">
+      
+        <div class="w3-center" style="padding-top: 70px; padding-bottom:30px;">
+          <h1>Zusammenarbeit mit der DAV</h1>
+        </div>
+        
+        <div class="w3-container" style="margin-bottom:40px;">
+          <p>Für Informationen über die Zusammenarbeit zwischen der DAV und der AVOE sehen Sie hier:</p>
+            <ul>
+              <li>Die Ausbildung zum Aktuar DAV</li>
+              <li>Prüfungsordnung der DAV</li>
+              <li>Anrechnung von Prüfungsleistungen durch die DAV</li>
+            </ul>
+        </div>
+        
+      </div>
+      
+      <!-- Ende DAV -->
+      
+      <hr>
+      
+      <!-- Vortragende -->
+      
+      <div class="w3-row-padding" id="Vortragende">
+      
+        <div class="w3-center" style="padding-top: 70px; padding-bottom:30px;">
+          <h1>Vortragende</h1>
+          <p>(Stand August 2017, Änderungen vorbehalten)</p>
+        </div>
+        
+        
+        <table class="w3-table w3-bordered" style="margin-top: 20px; margin-bottom:40px;">
+          <tr>
+            <td><b>Aktuarielle Modellierung</b></td>
+            <td>Dipl.-Math. Dr. Nora Gürtler
+              <p>Dipl.-Ing. Dr. Markus Orasch</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Finanzmathematik</b></td>
+            <td>Dipl.-Ing. René Knapp
+              <p>Univ.-Prof. Dr. Uwe Schmock</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Fortgeschrittene statistische Methoden im Versicherungswesen</b></td>
+            <td>ao.Univ.-Prof. Dr. Marcus Hudec
+              <p>Mag. Andreas Missbauer</p>
+              <p>Dipl.-Ing. Dr. Michael Schlögl</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Grundlegende statistische Methoden im Versicherungswesen</b></td>
+            <td>ao.Univ.-Prof. Dr. Marcus Hudec
+              <p>Mag. Andreas Missbauer</p>
+              <p>Dipl.-Ing. Dr. Michael Schlögl</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Instrumente und Strategien der Kapitalveranlagung</b></td>
+            <td>Dipl.-Wirtsch.-Ing. Dr. Rainer Eichwede
+              <p>Dipl.-Ing. Wolfgang Herold</p>
+              <p>Dipl.-Kfm. Arnd Münker</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Internationale Rechnungslegung von Versicherungsunternehmen</b></td>
+            <td>Dipl.-Wirtsch.-Ing. Martin Gehringer
+              <p>Dipl.-Math. Dr. Johann Kronthaler</p>
+              <p>Dipl.-Math. techn. Dr. Thorsten Wagner</p>
+              <p>Mag. Alexander Wlasto</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Krankenversicherungsmathematik</b></td>
+            <td>Dipl.-Ing. Karl Metzger</td>
+          </tr>
+          <tr>
+            <td><b>Lebensversicherungsmathematik</b></td>
+            <td>Dipl.-Ing. Dr. Karin Hirhager</td>
+          </tr>
+          <tr>
+            <td><b>Pensionsversicherungsmathematik</b></td>
+            <td>Dipl.-Ing. Sven Jörgen</td>
+          </tr>
+          <tr>
+            <td><b>Rechnungslegung im Versicherungswesen</b></td>
+            <td>Dipl.-Bw. Dirk Fassott
+              <p>Dipl.-Wirtsch.-Ing. Martin Gehringer</p>
+              <p>Dipl.-Math. techn. Dr. Thorsten Wagner</p>
+              <p>Mag. Alexander Wlasto</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Risikomanagement im Versicherungswesen</b></td>
+            <td>Dipl.-Ing. Wolfgang Herold
+              <p>Dipl.-Ing. René Knapp</p>
+              <p>Dipl.-Math. Dr. Johann Kronthaler</p>
+              <p>Univ.-Prof. Dr. Heinrich Schradin</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Schadenversicherungsmathematik</b></td>
+            <td>Univ.-Prof. Dr. Klaus D. Schmidt</td>
+          </tr>
+          <tr>
+            <td><b>Sozialversicherungsrecht</b></td>
+            <td>Univ.-Prof. Dr. Wolfgang Mazal
+            <p>Sektionschef i.R. Prof. Dr. Walter Pöltner</p>
+            </td>
+          </tr>
+            <tr>
+            <td><b>Versicherungsaufsichtsrecht</b></td>
+            <td>Ministerialrat Dr. Peter Braumüller</td>
+          </tr>
+          <tr>
+            <td><b>Versicherungsökonomie</b></td>
+            <td>Univ.-Prof. Dr. Heinrich Schradin</td>
+          </tr>
+          <tr>
+            <td><b>Versicherungsvertragsrecht</b></td>
+            <td>Univ.-Prof. Dr. Martin Schauer</td>
+          </tr>
+        </table>
+        
+        <div class="w3-container" style="margin-bottom:40px;">
+          <p>Weitere Informationen zu den Vortragenden finden Sie <a href="Vortragende.pdf" target="_blank">hier</a>.  </p>
+        </div>
+        
+      </div>
+      
+      <!-- Ende Vortragende -->
+      
+      <hr>
+      
+      <!-- Kontakt -->
+
+      <div class="w3-center" id="Kontakt" style="padding-top: 70px; padding-bottom:30px;">
+
+        <h1>Kontaktieren Sie uns</h1>
+
+      </div>
+
+      <form class="w3-container" method="post" action="PHP/send_emailDE.php" enctype="text/plain">
+        <div class="w3-section">
+          <label data-for="name">Name*</label>
+          <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="name"  maxlength="50" required>
+        </div>
+        <div class="w3-section">
+          <label data-for="email">E-Mail*</label>
+          <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="email" maxlength="75" required>
+        </div>
+        <div class="w3-section">
+          <label data-for="betreff">Betreff</label>
+          <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="betreff"  maxlength="150">
+        </div>
+		<div class="w3-section">
+		<label data-for="nachricht">Nachricht*</label>
+        <div class="form-group">
+            <textarea class="text-textarea" name="nachricht" maxlength="2000" style="height:200px;width:100% ;"></textarea>
+	    </div>
+		</div>
+        <button type="submit" class="w3-button w3-block w3-black">Senden</button>
+      </form>
+
+      <!-- Ende Kontakt -->
+
+    </div>
+
+    <!-- Ende Grundgerüst -->
+	
+  <hr>
+  
+  <!-- Impressum -->
+  
+  <div style="margin-left:100px;margin-top:40px;">
+  
+  <h1>Impressum:</h1>
+  
+  <p>
+  <b>Salzburg Insitute of Actuarial Studies</b><br>
+  <b>Adresse:</b> Hellbrunner Straße 34<br>
+  <b>PLZ:</b> 5020<br>
+  <b>Ort:</b> Salzburg<br>
+  <b>Land:</b> Österreich<br>
+  <br>
+  <b>Telefonnummer:</b> +43 (0)662 8044 5300<br>
+  <b>Fax:</b> +43 (0)662 8044 155<br>
+  <b>E-Mail:</b> sarah.lederer@sbg.ac.at<br>
+  <br>
+  </p>
+  
+  </div>
+  
+  <!-- Ende Impressum -->
+  
+  </body>
+
+</html>
